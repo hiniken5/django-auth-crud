@@ -29,38 +29,32 @@ To get a local copy up and running follow these simple example steps.
 
 Before you begin, ensure you have the following installed on your system:
 
-Python 3.8+
+- Python 3.8+
 
-pip
+- pip
 
-Git
+- Git
 
 ### Setup
 
 1. Clone the repository:
 
 ```
-{
   git clone https://github.com/your-username/taskify.git
   cd taskify
-}
 ```
 
 2. Create a virtual environment:
 
 ```
-{
 python3 -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-}
 ```
 
 3. Install dependencies:
 
 ```
-{
 pip install -r requirements.txt
-}
 ```
 
 ### Install
@@ -68,25 +62,19 @@ pip install -r requirements.txt
 1. Apply database migrations:
 
 ```
-{
 python manage.py migrate
-}
 ```
 
 2. Create a superuser (optional):
 
 ```
-{
 python manage.py createsuperuser
-}
 ```
 
 3. Run the development server:
 
 ```
-{
 python manage.py runserver
-}
 ```
 
 The application will be accessible at http://127.0.0.1:8000.
@@ -103,9 +91,7 @@ The application will be accessible at http://127.0.0.1:8000.
 To ensure the application's functionality, run the test suite:
 
 ```
-{
 python manage.py test
-}
 ```
 
 ### Deployment
@@ -115,17 +101,13 @@ For production deployment, consider using a WSGI server like Gunicorn or uWSGI a
 1. **Install Gunicorn:**
 
 ```
-{
 pip install gunicorn
-}
 ```
 
 2. **Run the production server:**
 
 ```
-{
 gunicorn taskify.wsgi --bind 0.0.0.0:8000
-}
 ```
 
 Remember to configure your production environment variables and database settings appropriately.
