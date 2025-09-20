@@ -14,7 +14,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://django-auth-crud-i2fl.onrender.com/)
 
 ## Getting Started
 
